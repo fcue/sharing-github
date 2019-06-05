@@ -27,4 +27,4 @@ FROM
     weather
 WHERE 
     zip = 94301 AND
-    precipitationin =  >0
+    precipitationin >= 0
