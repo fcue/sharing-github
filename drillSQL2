@@ -2,11 +2,11 @@
 ## WHAT WAS THE HOTTEST DAY IN OUR DATA SET? WHERE WAS THAT?
 
 SELECT
-	MAX (maxtemperaturef), zip
+	maxtemperaturef, zip
 FROM 
 	weather
-GROUP BY
-	zip
+WHERE
+	maxtemperaturef in (SELECT MAX(maxtemperaturef )from weather)
   
 ## HOW MANY TRIPS STARTED AT EACH STATION?
 
