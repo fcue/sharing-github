@@ -1,0 +1,28 @@
+#1
+
+#2
+
+
+
+
+
+
+
+
+
+#3
+SELECT
+	stations.dockcount,
+	trips.start_station,
+	COUNT (*)
+FROM
+	stations
+JOIN
+	trips
+ON stations.name=trips.start_station
+GROUP BY 1,2
+ORDER by dockcount DESC
+
+
+
+#4
