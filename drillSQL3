@@ -1,13 +1,31 @@
 #1
+SELECT
+	t.duration,
+	DATE(t.start_date),
+	t.trip_id
+FROM
+	trips t
+JOIN
+	(SELECT
+		events,
+		date
+	FROM
+		weather
+	WHERE events LIKE 'Rain%') AS rainydays
+ON
+	DATE(rainydays.date) = DATE(t.start_date)
+ORDER BY duration DESC;
 
 #2
 
-
-
-
-
-
-
+SELECT
+	docks_available,
+	station_id,
+	COUNT(*)
+FROM
+	status
+WHERE docks_available = 0
+GROUP BY 1, 2;
 
 
 #3
@@ -26,3 +44,20 @@ ORDER by dockcount DESC
 
 
 #4
+
+SELECT
+	MAX(t.duration),
+	DATE(t.start_date)
+FROM
+	trips t
+JOIN
+	(SELECT
+		events,
+		date
+	FROM
+		weather
+	WHERE events LIKE 'Rain%') AS rainydays
+ON
+	DATE(rainydays.date) = DATE(t.start_date)
+GROUP BY DATE(t.start_date)
+ORDER BY DATE(t.start_date) ASC;
