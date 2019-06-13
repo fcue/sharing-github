@@ -9,9 +9,36 @@ FROM
 WHERE
 	price in (SELECT MAX(price )from sfo_listings)
   
-"24650875"	"Full House Victorian: 7500 SqFt, 4 Floors, Hot Tub"	"10000"	"Western Addition"	"Entire home/apt"
+*********************************************************
+SELECT
+	COUNT(*),
+	neighbourhood
+FROM
+	sfo_listings
+GROUP BY sfo_listings.neighbourhood
+ORDER BY 1 DESC
+LIMIT 5 (TOP 5 NEIGHBOURHOOD based listing count)
 
+*******************************************************
+SELECT
+	EXTRACT(MONTH FROM sfo_calendar.calender_date) as month,
+	AVG(CAST(REPLACE(SUBSTR(sfo_calendar.price, 2), ',' ,'') as float)) as average_price
+FROM
+	sfo_calendar
+WHERE
+	price IS NOT NULL
+GROUP BY
+	1;
 
-
-
-
+*********************************************************
+SELECT 
+	COUNT(CASE WHEN available = 'f' then 1 END) as vacancy_count,
+	EXTRACT(MONTH FROM sfo_calendar.calender_date) as month
+FROM
+	sfo_calendar
+JOIN 
+	sfo_listings
+ON
+  sfo_listings.id = sfo_calendar.listing_id
+GROUP BY 2
+ORDER BY vacancy_count DESC;
