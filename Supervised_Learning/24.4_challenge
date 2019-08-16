@@ -1,0 +1,37 @@
+1.Predict the running times of prospective Olympic sprinters using data from the last 20 Olympics.
+
+- Linear Regression
+- Random Forest 
+
+2.You have more features (columns) than rows in your dataset.
+
+-Naive Bayes
+-Linear regression
+
+3. Identify the most important characteristic predicting likelihood of being jailed before age 20.
+
+-Gradient boosting
+
+4. Implement a filter to “highlight” emails that might be important to the recipient
+
+-Naive Bayes
+
+5. You have 1000+ features.
+
+-Use PCA or Lasso regression to reduce dimension
+
+6. Predict whether someone who adds items to their cart on a website will purchase the items.
+
+-Random Forest Classifier
+
+7. Your dataset dimensions are 982400 x 500
+
+-Use PCA or lasso regression to decrease dimension. 
+
+8. Identify faces in an image.
+
+-SVC with Kerneling
+
+9. Predict which of three flavors of ice cream will be most popular with boys vs girls.
+
+-K-Nearest Neighbor Classifier with Distance-Weighting.
