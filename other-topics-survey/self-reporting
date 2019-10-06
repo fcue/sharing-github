@@ -1,0 +1,30 @@
+#DRILL: When to use surveys
+
+State whether a survey would be the best option for answering each of the following questions.
+
+1. Popularity of various Uber drivers. 
+   
+   Yes this would be appropriate. I believe Uber already has a survey or feedback form at the end of every trip made. They use
+    star ratings from 1 star to 5 stars. 
+2. A grocery store wants to know how much people like strawberry, chocolate, and vanilla ice cream. 
+   
+   It would be better to look at the sales inventory on ice cream, do a query and see which flavors are most popular rather
+    than doing a survey. 
+
+3. Trojan wants to know whether their condoms are more popular among straight people or gay people.
+    Yes a survey would be appropriate. Survey has to make sure to get accurate gender orientation. 
+    
+4. Recently, rental rates for HappyCars have increased by 30%, which is quite unusual. You want to find out why this is happening and how to keep the increase going.
+    I think a survey is appropriate if outside factors are ruled out. Maybe look at events such as a musical festival or other events that can
+    bring in crowds. Also, is this an effect of a new ad? After ruling those out, then a survey can be used to find out where 
+    did customers learn of HappyCars. A free text must be an option in the survey. 
+     
+    
+5. Assessing the success rate of a new advertising campaign. 
+   
+   I would think that a sales inventory would be a better indicator for success rate or through clicks on a website. 
+   
+6. Measuring the effect of nurse/patient ratio on patient recovery rates in hospital wards.
+
+  This would come from multiple factors such as cases of infection/sepsis, inpatient admission days, treatment used,
+  diagnosis and so on. 
