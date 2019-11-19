@@ -1,6 +1,7 @@
 1. Write a query that allows you to inspect the schema of the naep table.
 
-SELECT * FROM naep
+SSELECT column_name, data_type
+FROM INFORMATION_SCHEMA.COLUMNS where table_name = 'naep';
 
 
 2. Write a query that returns the first 50 records of the naep table.
